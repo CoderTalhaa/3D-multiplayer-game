@@ -1,0 +1,34 @@
+{
+  "name": "multi-game",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "frontend-dev": "vite --host",
+    "frontend-build": "vite build --watch",
+    "backend-dev": "nodemon server.js",
+    "backend-build": "node server.js",
+    "dev": "concurrently --kill-others \"npm run frontend-build\" \"npm run backend-dev\"",
+    "talha-postbuild": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "gsap": "^3.12.2",
+    "lil-gui": "^0.18.2",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "three": "^0.157.0",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "events": "^3.3.0",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "vite-plugin-glsl": "^1.1.2"
+  }
+}
